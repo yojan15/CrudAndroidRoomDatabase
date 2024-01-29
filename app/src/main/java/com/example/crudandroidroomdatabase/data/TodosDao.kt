@@ -16,5 +16,5 @@ interface TodosDao {
     @Delete
     fun deleteTodos(todos: Todos)
     @Query("select * from todos order by id ASC")
-    fun getAll() : LiveData<List<Todos>>
+    fun getAll() : MutableList<Todos>
 }

@@ -12,7 +12,6 @@ abstract class TodosDatabase : RoomDatabase() {
     companion object {
         @Volatile
         private var INSTANCE : TodosDatabase? = null
-
         fun getDatabase(context : Context):TodosDatabase {
             if(INSTANCE == null) {
                 synchronized(this) {

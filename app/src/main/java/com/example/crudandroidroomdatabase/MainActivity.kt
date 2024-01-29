@@ -15,5 +15,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext,InsertActivity::class.java)
             startActivity(intent)
         }
+
+        binding.getALlTodos.setOnClickListener {
+            startActivity(Intent(this,ActivityGetAllData::class.java))
+        }
     }
 }

@@ -18,7 +18,6 @@ class InsertActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         database = TodosDatabase.getDatabase(this)
-
         binding.insertData.setOnClickListener {
             val insertText = binding.insertText.text.toString()
 
