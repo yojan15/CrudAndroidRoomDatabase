@@ -1,3 +1,9 @@
 package com.example.crudandroidroomdatabase.data
-
-data class Todos()
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+@Entity
+data class Todos(
+    @PrimaryKey(autoGenerate = true)
+    val id : Int,
+    val text : String
+)
